@@ -1,0 +1,22 @@
+#content{
+    display:flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+#collumns{
+    background-color: aqua;
+    width: 20%;
+    text-align: center;
+}
+body{
+    margin: 0;
+    background-color: cadetblue;
+}
+input{
+    width: 400%;
+    height: 100px;
+}
+button{
+    word-break: break-all;
+}

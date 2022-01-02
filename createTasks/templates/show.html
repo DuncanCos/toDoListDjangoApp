@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %} 
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet"  href="{% static 'style.css' %}" type="text/css" >
+    <title>Ma page de test</title>
+  </head>
+  <body>
+    <h1>GESTION DE PROJETS</h1> 
+   <a href="/add"><h1 >AJOUTS</h1> </a> 
+   <div id= content>
+   <div id= collumns>
+   <h1>À faire</h1>
+    {%for is in maintenant%}
+    <button  onclick="window.location.href = '/{{is.id}}';">{{is.nomDeTache}}</button> <br><br>
+    {%endfor%}
+    
+  </div>
+    <div id= collumns>
+    <h1>En cours</h1>
+    {%for as in apres%}
+    <button  onclick='window.location.href = "/1/{{as.id}}";''> {{as.nomDeTache}}</button> <br><br>
+    {%endfor%}
+    
+  </div>
+  <div id= collumns>
+    <h1>Terminee</h1>
+    {%for os in fini%}
+    <button>{{os.nomDeTache}}</button> <br><br>
+    {%endfor%}
+  </div>
+</div>
+  </body>
+</html>
