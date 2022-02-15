@@ -3,7 +3,7 @@
 ## to install:  
 pip install django  
 
-###to prepare the website 
+### to prepare the website 
 py manage.py migrate  
 py manage.py runserver  
 
